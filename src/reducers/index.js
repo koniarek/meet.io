@@ -6,12 +6,11 @@ import events from "./events";
 const appReducer = combineReducers({
   auth,
   users,
-  events,
-    store
+  events
 });
 
-const rootReducer = (state, action, store) => {
-  return appReducer(state, action, store);
+const rootReducer = (state, action) => {
+  return appReducer(state, action);
 };
 
 export default rootReducer;
